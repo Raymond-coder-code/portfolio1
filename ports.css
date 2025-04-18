@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.portfolio-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.hero {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 10px;
+    display: block;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.about-content {
+    display: flex;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 2;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.about-stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.stat-item h3 {
+    font-size: 36px;
+    margin: 0;
+    color: #3498db;
+}
+
+.stat-item p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+.containers {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+/* Add to your existing ports.css */
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skill-item i {
+    font-size: 48px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.skill-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.project-img {
+    height: 200px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    margin-right: 15px;
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
